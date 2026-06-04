@@ -25,9 +25,9 @@ export const botConfig = {
     activities: [
       {
         // Text users will see (example: "Playing /help | Titan Bot").
-        name: "advytest",
+        name: "Humanity's Boundary",
         // Activity type number (0 = Playing).
-        type: 0, 
+        type: 3, 
       },
     ],
   },
@@ -56,9 +56,9 @@ export const botConfig = {
   applications: {
     // Default questions shown when someone fills out an application.
     defaultQuestions: [
-      { question: "What is your name?", required: true },
-      { question: "How old are you?", required: true },
-      { question: "Why do you want to join?", required: true },
+      { question: "Quelle est ta demande?", required: true },
+      { question: "En jeux ou sur discord?", required: true },
+      { question: "Raconte nous", required: true },
     ],
 
     // Embed colors by application status.
@@ -136,7 +136,7 @@ export const botConfig = {
     },
     footer: {
       // Default footer text used in bot embeds.
-      text: "Titan Bot",
+      text: "AOT:Humanity's Boundary",
       // Footer icon URL (null = no icon).
       icon: null,
     },
@@ -156,11 +156,11 @@ export const botConfig = {
   economy: {
     currency: {
       // Currency display name.
-      name: "coins",
+      name: "Mark",
       // Plural display name.
-      namePlural: "coins",
+      namePlural: "Marks",
       // Currency symbol shown in balances.
-      symbol: "$",
+      symbol: "M$",
     },
 
     // Starting balance for new users.
@@ -170,18 +170,18 @@ export const botConfig = {
     baseBankCapacity: 100000,
 
     // Daily reward amount.
-    dailyAmount: 100,
+    dailyAmount: 5,
 
     // Work command random payout range.
-    workMin: 10,
-    workMax: 100,
+    workMin: 2,
+    workMax: 7,
 
     // Beg command random payout range.
     begMin: 5,
-    begMax: 50,
+    begMax: 11,
 
     // Chance to succeed when robbing (0.4 = 40%).
-    robSuccessRate: 0.4,
+    robSuccessRate: 0.326,
 
     // Jail time after failed rob (milliseconds).
     // 3600000 = 1 hour.
@@ -211,25 +211,25 @@ export const botConfig = {
       none: {
         emoji: "⚪",
         color: "#95A5A6",
-        label: "None",
+        label: "R.A.S",
       },
       low: {
         emoji: "🟢",
         color: "#2ECC71",
-        label: "Low",
+        label: "Bas",
       },
       medium: {
         emoji: "🟡",
         color: "#F1C40F",
-        label: "Medium",
+        label: "Moyen",
       },
       high: {
         emoji: "🔴",
         color: "#E74C3C",
-        label: "High",
+        label: "Haut",
       },
       urgent: {
-        emoji: "🚨",
+        emoji: "🟥",
         color: "#E91E63",
         label: "Urgent",
       },
@@ -359,7 +359,7 @@ export const botConfig = {
     // Welcome template posted when a user joins.
     // Placeholders: {user}, {server}, {memberCount}
     defaultWelcomeMessage:
-      "Welcome {user} to {server}! We now have {memberCount} members!",
+      "Bienvenue à {user}. Merci d'avoir rejoint notre serveur, nous espérons que vous passerez un excellent moment avec nous ! Nous espérons que tu passeras un très bon moment sur notre serveur",
     // Goodbye template posted when a user leaves.
     // Placeholders: {user}, {memberCount}
     defaultGoodbyeMessage:
